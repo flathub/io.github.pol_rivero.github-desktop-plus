@@ -57,6 +57,7 @@ modules:
         # Use predownloaded dugite-native
         TMPDIR: /run/build/github-desktop-plus/flatpak-node/tmp
         XDG_CACHE_HOME: /run/build/github-desktop-plus/flatpak-node/cache
+        APP_VERSION: 3.5.3.8
     build-commands:
       # Symlink libcurl-gnutls
       - mkdir -p /app/lib
@@ -81,6 +82,8 @@ modules:
       - install -Dm755 start-github-desktop-plus.sh /app/bin/start-github-desktop-plus
     post-install:
       - install -D publish/flatpak/io.github.pol_rivero.github-desktop-plus.desktop -t  /app/share/applications/
+      # Populate [VERSION] and [DATE] placeholders
+      - sed -i 's/\[VERSION\]/'"$APP_VERSION"'/g; s/\[DATE\]/'$(date +%Y-%m-%d)'/g' publish/flatpak/io.github.pol_rivero.github-desktop-plus.metainfo.xml
       - install -D publish/flatpak/io.github.pol_rivero.github-desktop-plus.metainfo.xml -t  /app/share/metainfo/
       - install -Dm644 publish/flatpak/logos/32x32.png  /app/share/icons/hicolor/32x32/apps/$FLATPAK_ID.png
       - install -Dm644 publish/flatpak/logos/64x64.png  /app/share/icons/hicolor/64x64/apps/$FLATPAK_ID.png
