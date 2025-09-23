@@ -75,3 +75,4 @@ To update `github-desktop-plus` repo to its latest commit and update the depende
 1. Run `./generate-sources` to update `generated-sources.json`.
 
 1. Once you are sure it works, make a PR with the changes.
+
