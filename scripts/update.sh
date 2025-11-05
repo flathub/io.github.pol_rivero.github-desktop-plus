@@ -22,6 +22,14 @@ TAG_NAME="v$VERSION"
 
 cd "$REPO_ROOT"
 
+# 0. Create or switch to branch
+BRANCH_NAME="update-$VERSION"
+if git rev-parse --verify "$BRANCH_NAME" >/dev/null 2>&1; then
+  git checkout "$BRANCH_NAME"
+else
+  git checkout -b "$BRANCH_NAME"
+fi
+
 # 1. Get the hash of the specified tag
 rm -rf github-desktop-plus
 git clone --depth 1 --branch "$TAG_NAME" $REPO_URL github-desktop-plus
@@ -49,7 +57,7 @@ sed -E -i.bak "s|$pattern|$replacement|" $YAML_FILE
 # 4. Commit changes
 git add $YAML_FILE generated-sources.json
 git commit -m "Update to version $VERSION"
-git push
+git push --set-upstream origin "$BRANCH_NAME"
 
 # N. Cleanup
 rm $YAML_FILE.bak
