@@ -1,10 +1,10 @@
 [
     {
         "type": "archive",
-        "url": "https://electronjs.org/headers/v36.1.0/node-v36.1.0-headers.tar.gz",
+        "url": "https://electronjs.org/headers/v38.2.0/node-v38.2.0-headers.tar.gz",
         "strip-components": 1,
-        "sha256": "980c5e06be6ca6d29656fb50c6153704f20e81874da90d41c63340fb5dfa8619",
-        "dest": "flatpak-node/cache/node-gyp/36.1.0"
+        "sha256": "f0ad6b919e51d551cee2a47ecfd66892314bcec356520cd9287ff01651499cef",
+        "dest": "flatpak-node/cache/node-gyp/38.2.0"
     },
     {
         "type": "archive",
@@ -48,10 +48,10 @@
     },
     {
         "type": "archive",
-        "url": "https://www.electronjs.org/headers/v37.5.1/node-v37.5.1-headers.tar.gz",
+        "url": "https://www.electronjs.org/headers/v38.2.0/node-v38.2.0-headers.tar.gz",
         "strip-components": 1,
-        "sha256": "6240220932cb72bd8d547d27ce5ab93c33b86d0ef6ad5361590fb8260187f367",
-        "dest": "flatpak-node/cache/node-gyp/37.5.1"
+        "sha256": "f0ad6b919e51d551cee2a47ecfd66892314bcec356520cd9287ff01651499cef",
+        "dest": "flatpak-node/cache/node-gyp/38.2.0"
     },
     {
         "type": "file",
@@ -62,9 +62,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/desktop/dugite-native/releases/download/v2.47.3/dugite-native-v2.47.3-2b6f2f9-ubuntu-x64.tar.gz",
-        "sha256": "14bc6a09a324c03320d9655830119373ead9ae41c891a9c2a2a6d9ab18750c5b",
-        "dest-filename": "dugite-native-v2.47.3-2b6f2f9-ubuntu-x64.tar.gz",
+        "url": "https://github.com/desktop/dugite-native/releases/download/v2.47.3-1/dugite-native-v2.47.3-b6d6cfa-ubuntu-x64.tar.gz",
+        "sha256": "a6cd111dd8d82a26b521d5bcaf28631d5e335f516aa8ec0a993acbd7229bdd08",
+        "dest-filename": "dugite-native-v2.47.3-b6d6cfa-ubuntu-x64.tar.gz",
         "dest": "flatpak-node/tmp",
         "only-arches": [
             "x86_64"
@@ -72,16 +72,16 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v37.5.1/SHASUMS256.txt",
-        "sha256": "7bc655e023cc1b4f6f37ca7d4e21419ecaed68237f12650cf08aacc4081d8fcd",
-        "dest-filename": "SHASUMS256.txt-37.5.1",
+        "url": "https://github.com/electron/electron/releases/download/v38.2.0/SHASUMS256.txt",
+        "sha256": "45f583cdcbc34e3bd5658a8e9cb7fa0eb17dfaf8231e42fad5e978f3878abf49",
+        "dest-filename": "SHASUMS256.txt-38.2.0",
         "dest": "flatpak-node/cache/electron"
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v37.5.1/electron-v37.5.1-linux-arm64.zip",
-        "sha256": "87ff5353f05b7d4ed83b0131dc73923957c5a9948c4748c9c696e94b90c5546b",
-        "dest-filename": "electron-v37.5.1-linux-arm64.zip",
+        "url": "https://github.com/electron/electron/releases/download/v38.2.0/electron-v38.2.0-linux-arm64.zip",
+        "sha256": "76116429b368c883f93eb98cbdb053f98d811c35943133fe3cf9b408018ebe2f",
+        "dest-filename": "electron-v38.2.0-linux-arm64.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "aarch64"
@@ -89,9 +89,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v37.5.1/electron-v37.5.1-linux-armv7l.zip",
-        "sha256": "3fb1c01cadd627e7bb2126629557c277441dc1064de1c7e1946f7ce26f743abb",
-        "dest-filename": "electron-v37.5.1-linux-armv7l.zip",
+        "url": "https://github.com/electron/electron/releases/download/v38.2.0/electron-v38.2.0-linux-armv7l.zip",
+        "sha256": "a4345bb87504b6b2bef29c0dc53b99770b203a7052fd2c5d38fd3e16177d3e68",
+        "dest-filename": "electron-v38.2.0-linux-armv7l.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "arm"
@@ -99,9 +99,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v37.5.1/electron-v37.5.1-linux-x64.zip",
-        "sha256": "00873612a8c1b0c29dff6d3c759585013deaacf64e38b4cb173b7b18d0f272fc",
-        "dest-filename": "electron-v37.5.1-linux-x64.zip",
+        "url": "https://github.com/electron/electron/releases/download/v38.2.0/electron-v38.2.0-linux-x64.zip",
+        "sha256": "f0028975282a6f2946797175ac406a95096f29c5dcda98048148668dfa36eff8",
+        "dest-filename": "electron-v38.2.0-linux-x64.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "x86_64"
@@ -3749,9 +3749,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/dugite/-/dugite-3.0.0-rc12.tgz#e4ea9b34f3d542c4d66796e68f309b31edc5d03a",
-        "sha512": "5379e56247dc0bbcbc3ccfbced3196084cf2368687919a0f5d0a1d6581c5d1298533846b72728d6b121c3791a2e91c0ebc57ba85e8c95ef31cf28608251a7b87",
-        "dest-filename": "dugite-3.0.0-rc12.tgz",
+        "url": "https://registry.yarnpkg.com/dugite/-/dugite-3.0.0.tgz#56621ad397579d9a58c10c6a4f5e646b35937046",
+        "sha512": "faada2df2e53be50b661a6687e47442c7b66bc76d3eb2b813838a622dc54eb1106b47a91b7aae90292737fa940aada68fb2d60a2485fb07c942c7d32359b9359",
+        "dest-filename": "dugite-3.0.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -3868,9 +3868,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/electron/-/electron-37.5.1.tgz#2f2758f57948f63d853a8c905c55ad8d9cd84ae7",
-        "sha512": "46a377765e88e72866ca7914737a54ccceaa142bc035abb7546457f7140487b1587709a4a95c4a5d83397a7ac4f4b5bb8fb3f31e8990427ebe276c5a17b047b1",
-        "dest-filename": "electron-37.5.1.tgz",
+        "url": "https://registry.yarnpkg.com/electron/-/electron-38.2.0.tgz#fc6bb321923320cc76aa036c7677642ab0239d70",
+        "sha512": "0b0e4c6fe379371b06d07735aabf08eb92ade403d1adb813b44127df34e8777d14349467004d716c693fd4d39a0e7dce0f323f3189fa0734fd4fdceb78fef158",
+        "dest-filename": "electron-38.2.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -9370,9 +9370,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/tar-fs/-/tar-fs-2.1.3.tgz#fb3b8843a26b6f13a08e606f7922875eb1fbbf92",
-        "sha512": "d3dd27c182439a5870170116dd0425faf68d9f1b0edb256c778e5e4ca441cd2ceefa195bd70d8af629d5ab96f49e05ee2d5a90e00a6fb141c79eeff340d91602",
-        "dest-filename": "tar-fs-2.1.3.tgz",
+        "url": "https://registry.yarnpkg.com/tar-fs/-/tar-fs-2.1.4.tgz#800824dbf4ef06ded9afea4acafe71c67c76b930",
+        "sha512": "983023c2665d87b2d34faa4d95e674e58b7ae470b713e36243397aef6bd01b7f2322b7a1b4993f27798dc0883ebd28503dc2c5fcb57b08c9c35babe38fab1f61",
+        "dest-filename": "tar-fs-2.1.4.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -10443,13 +10443,7 @@
         "type": "inline",
         "contents": "9",
         "dest-filename": "installVersion",
-        "dest": "flatpak-node/cache/node-gyp/36.1.0"
-    },
-    {
-        "type": "inline",
-        "contents": "9",
-        "dest-filename": "installVersion",
-        "dest": "flatpak-node/cache/node-gyp/37.5.1"
+        "dest": "flatpak-node/cache/node-gyp/38.2.0"
     },
     {
         "type": "script",
@@ -10488,6 +10482,47 @@
         "type": "shell",
         "commands": [
             "bash flatpak-node/setup_sdk_node_headers.sh"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f\"",
+            "ln -s \"../SHASUMS256.txt-38.2.0\" \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f/SHASUMS256.txt\""
+        ],
+        "dest": "flatpak-node/cache/electron"
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f\"",
+            "ln -s \"../electron-v38.2.0-linux-arm64.zip\" \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f/electron-v38.2.0-linux-arm64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "aarch64"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f\"",
+            "ln -s \"../electron-v38.2.0-linux-armv7l.zip\" \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f/electron-v38.2.0-linux-armv7l.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "arm"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f\"",
+            "ln -s \"../electron-v38.2.0-linux-x64.zip\" \"465a2d47ea0faa2e25fd2b450a4011806c44da21a145299836510c0d90b6655f/electron-v38.2.0-linux-x64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "x86_64"
         ]
     },
     {
@@ -10541,16 +10576,8 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52\"",
-            "ln -s \"../SHASUMS256.txt-37.5.1\" \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52/SHASUMS256.txt\""
-        ],
-        "dest": "flatpak-node/cache/electron"
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52\"",
-            "ln -s \"../electron-v37.5.1-linux-arm64.zip\" \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52/electron-v37.5.1-linux-arm64.zip\""
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv38.2.0electron-v38.2.0-linux-arm64.zip\"",
+            "ln -s \"../electron-v38.2.0-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv38.2.0electron-v38.2.0-linux-arm64.zip/electron-v38.2.0-linux-arm64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -10560,8 +10587,8 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52\"",
-            "ln -s \"../electron-v37.5.1-linux-armv7l.zip\" \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52/electron-v37.5.1-linux-armv7l.zip\""
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv38.2.0electron-v38.2.0-linux-armv7l.zip\"",
+            "ln -s \"../electron-v38.2.0-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv38.2.0electron-v38.2.0-linux-armv7l.zip/electron-v38.2.0-linux-armv7l.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -10571,41 +10598,8 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52\"",
-            "ln -s \"../electron-v37.5.1-linux-x64.zip\" \"ddf3da881add1addd017edeba99db524e72f8bfc3a68220075ea16e4e9184b52/electron-v37.5.1-linux-x64.zip\""
-        ],
-        "dest": "flatpak-node/cache/electron",
-        "only-arches": [
-            "x86_64"
-        ]
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv37.5.1electron-v37.5.1-linux-arm64.zip\"",
-            "ln -s \"../electron-v37.5.1-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv37.5.1electron-v37.5.1-linux-arm64.zip/electron-v37.5.1-linux-arm64.zip\""
-        ],
-        "dest": "flatpak-node/cache/electron",
-        "only-arches": [
-            "aarch64"
-        ]
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv37.5.1electron-v37.5.1-linux-armv7l.zip\"",
-            "ln -s \"../electron-v37.5.1-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv37.5.1electron-v37.5.1-linux-armv7l.zip/electron-v37.5.1-linux-armv7l.zip\""
-        ],
-        "dest": "flatpak-node/cache/electron",
-        "only-arches": [
-            "arm"
-        ]
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv37.5.1electron-v37.5.1-linux-x64.zip\"",
-            "ln -s \"../electron-v37.5.1-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv37.5.1electron-v37.5.1-linux-x64.zip/electron-v37.5.1-linux-x64.zip\""
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv38.2.0electron-v38.2.0-linux-x64.zip\"",
+            "ln -s \"../electron-v38.2.0-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv38.2.0electron-v38.2.0-linux-x64.zip/electron-v38.2.0-linux-x64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -10614,9 +10608,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/desktop/dugite-native/releases/download/v2.47.3/dugite-native-v2.47.3-2b6f2f9-ubuntu-arm64.tar.gz",
-        "sha256": "1775b327f870851f7adc5275579cab3720c74b55b50066717a8bc70c2c6b2b4c",
-        "dest-filename": "dugite-native-v2.47.3-2b6f2f9-ubuntu-arm64.tar.gz",
+        "url": "https://github.com/desktop/dugite-native/releases/download/v2.47.3-1/dugite-native-v2.47.3-b6d6cfa-ubuntu-arm64.tar.gz",
+        "sha256": "51765f4bbda12e55d82410099503baa25be1dcff746a812d3e11894f5687b2d8",
+        "dest-filename": "dugite-native-v2.47.3-b6d6cfa-ubuntu-arm64.tar.gz",
         "dest": "flatpak-node/tmp",
         "only-arches": [
             "aarch64"
