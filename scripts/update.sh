@@ -13,11 +13,13 @@ if [ -z "$VERSION" ]; then
   echo "Usage: $0 <version>"
   exit 1
 fi
-if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
-  echo "Error: Version must be in the format X.Y.Z or X.Y.Z.W"
+if ! [[ "$VERSION" =~ ^v?[0-9]+\.[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
+  echo "Error: Version must be in the format X.Y.Z or X.Y.Z.W (with optional 'v' prefix)"
   exit 1
 fi
 
+# Remove 'v' prefix if present
+VERSION="${VERSION#v}"
 TAG_NAME="v$VERSION"
 
 cd "$REPO_ROOT"

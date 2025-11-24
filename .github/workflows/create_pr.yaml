@@ -1,0 +1,36 @@
+name: Create release PR
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag name (e.g., "1.2.3" or "v1.2.3")'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run release script
+        run: |
+          scripts/update.sh ${{ github.event.inputs.tag_name }}
+
+      - name: Get checked out branch name
+        id: get_branch_name
+        run: echo "branch_name=$(git rev-parse --abbrev-ref HEAD)" >> $GITHUB_ENV
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: Release ${{ github.event.inputs.tag_name }}
+          body: |
+            This PR releases ${{ github.event.inputs.tag_name }}.
+          base: main
+          head: ${{ env.branch_name }}
