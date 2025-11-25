@@ -9,7 +9,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write  # To commit the release changes
 
 jobs:
   check:
