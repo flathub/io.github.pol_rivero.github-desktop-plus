@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write  # To commit the release changes
+  pull-requests: write  # To create the pull request
 
 jobs:
   check:
@@ -18,24 +19,22 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Configure git
+      - name: Normalize tag name
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # Remove leading "v" from tag name
+          echo "tag_name=${{ github.event.inputs.tag_name }}" | sed 's/^v//g' >> $GITHUB_ENV
 
       - name: Run release script
         run: |
-          scripts/update.sh ${{ github.event.inputs.tag_name }}
-
-      - name: Get checked out branch name
-        id: get_branch_name
-        run: echo "branch_name=$(git rev-parse --abbrev-ref HEAD)" >> $GITHUB_ENV
+          scripts/update.sh ${{ env.tag_name }}
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v7
         with:
-          title: Release ${{ github.event.inputs.tag_name }}
+          title: Update to ${{ env.tag_name }}
           body: |
-            This PR releases ${{ github.event.inputs.tag_name }}.
-          base: main
-          head: ${{ env.branch_name }}
+            This PR releases ${{ env.tag_name }}.
+          commit-message: |
+            Update to version ${{ env.tag_name }}
+          branch: release/${{ env.tag_name }}
+          delete-branch: true
