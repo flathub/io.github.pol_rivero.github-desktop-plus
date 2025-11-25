@@ -38,3 +38,4 @@ jobs:
             Update to version ${{ env.tag_name }}
           branch: release/${{ env.tag_name }}
           delete-branch: true
+          reviewers: pol-rivero
