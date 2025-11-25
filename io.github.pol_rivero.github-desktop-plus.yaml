@@ -2,7 +2,7 @@ app-id: io.github.pol_rivero.github-desktop-plus
 base: org.electronjs.Electron2.BaseApp
 base-version: "25.08"
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node22
