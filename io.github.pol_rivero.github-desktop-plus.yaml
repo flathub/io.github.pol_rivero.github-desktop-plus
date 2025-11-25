@@ -5,7 +5,7 @@ runtime: org.freedesktop.Platform
 runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node22
+  - org.freedesktop.Sdk.Extension.node24
 command: start-github-desktop-plus
 separate-locales: false
 finish-args:
@@ -38,16 +38,16 @@ modules:
       - type: script
         dest-filename: node-gyp
         commands:
-          - node /usr/lib/sdk/node22/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js
+          - node /usr/lib/sdk/node24/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js
             "$@"
   - name: github-desktop-plus
     buildsystem: simple
     build-options:
       # Add the node bin directory & yarn directory.
-      append-path: /app/bin:/usr/lib/sdk/node22/bin:/run/build/github-desktop-plus/flatpak-node/chromedriver:/usr/lib/sdk/node22/lib/node_modules/npm/node_modules/node-gyp/bin
+      append-path: /app/bin:/usr/lib/sdk/node24/bin:/run/build/github-desktop-plus/flatpak-node/chromedriver:/usr/lib/sdk/node24/lib/node_modules/npm/node_modules/node-gyp/bin
       env:
         # Sets the directory where Node is located so way npm won't download the headers.
-        npm_config_nodedir: /usr/lib/sdk/node22
+        npm_config_nodedir: /usr/lib/sdk/node24
         # Set the Electron cache directory.
         ELECTRON_CACHE: /run/build/github-desktop-plus/flatpak-node/electron-cache
         # Skip Electron related downloads
