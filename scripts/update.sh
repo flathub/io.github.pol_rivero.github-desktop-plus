@@ -14,7 +14,7 @@ pattern="\s*APP_VERSION: ([0-9.]+)"
 OLD_VERSION=$(sed -nE "s/$pattern/\1/p" "$YAML_FILE")
 echo "OLD version: $OLD_VERSION"
 
-TAG_NAME=$(curl -s "https://api.github.com/repos/$REPO_NAME/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')
+TAG_NAME=$(curl -s "https://api.github.com/repos/$REPO_NAME/releases/latest" | jq -r .tag_name)
 VERSION="${TAG_NAME#v}"
 echo "NEW version: $VERSION"
 
@@ -22,6 +22,13 @@ if [ "$OLD_VERSION" = "$VERSION" ]; then
   echo "Versions are the same. No update needed."
   exit 0
 fi
+
+PR_COUNT=$(curl -s "https://api.github.com/repos/$REPO_NAME/pulls?state=open" | jq length)
+if [ "$PR_COUNT" -gt 0 ]; then
+  echo "There are open pull requests. Skipping update."
+  exit 0
+fi
+
 echo "Versions differ. Updating to $TAG_NAME"
 
 cd "$REPO_ROOT"
