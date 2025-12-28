@@ -3,24 +3,26 @@
 # If any command fails, exit immediately
 set -e
 
-REPO_URL="https://github.com/pol-rivero/github-desktop-plus.git"
+REPO_NAME="pol-rivero/github-desktop-plus"
+REPO_URL="https://github.com/$REPO_NAME.git"
 YAML_FILE="io.github.pol_rivero.github-desktop-plus.yaml"
 SCRIPTS_DIR="$(dirname "$(realpath "$0")")"
 REPO_ROOT="$(dirname "$SCRIPTS_DIR")"
 
-VERSION="$1"
-if [ -z "$VERSION" ]; then
-  echo "Usage: $0 <version>"
-  exit 1
-fi
-if ! [[ "$VERSION" =~ ^v?[0-9]+\.[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
-  echo "Error: Version must be in the format X.Y.Z or X.Y.Z.W (with optional 'v' prefix)"
-  exit 1
-fi
+# 0. Check if version has changed
+pattern="\s*APP_VERSION: ([0-9.]+)"
+OLD_VERSION=$(sed -nE "s/$pattern/\1/p" "$YAML_FILE")
+echo "OLD version: $OLD_VERSION"
 
-# Remove 'v' prefix if present
-VERSION="${VERSION#v}"
-TAG_NAME="v$VERSION"
+TAG_NAME=$(curl -s "https://api.github.com/repos/$REPO_NAME/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')
+VERSION="${TAG_NAME#v}"
+echo "NEW version: $VERSION"
+
+if [ "$OLD_VERSION" = "$VERSION" ]; then
+  echo "Versions are the same. No update needed."
+  exit 0
+fi
+echo "Versions differ. Updating to $TAG_NAME"
 
 cd "$REPO_ROOT"
 
@@ -35,7 +37,7 @@ python3 -m venv .venv
 ./generate-sources
 
 # 3. Update flatpak yaml
-# url: https://github.com/pol-rivero/github-desktop-plus.git
+# url: <url>
 # tag: vX.Y.Z.W
 # commit: <hash>
 escaped_url=$(echo "$REPO_URL" | sed 's/[.[\*^$]/\\&/g')
@@ -55,3 +57,7 @@ rm -rf .venv
 
 # The only files that should be committed are $YAML_FILE and generated-sources.json
 git status
+
+if [ -n "$GITHUB_ENV" ]; then
+  echo "update_tag_name=$TAG_NAME" >> "$GITHUB_ENV"
+fi

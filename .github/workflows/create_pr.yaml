@@ -2,11 +2,8 @@ name: Create release PR
 
 on:
   workflow_dispatch:
-    inputs:
-      tag_name:
-        description: 'Tag name (e.g., "1.2.3" or "v1.2.3")'
-        required: true
-        type: string
+  schedule:
+    - cron: '0 */6 * * *'
 
 permissions:
   contents: write  # To commit the release changes
@@ -19,23 +16,19 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Normalize tag name
-        run: |
-          # Remove leading "v" from tag name
-          echo "tag_name=${{ github.event.inputs.tag_name }}" | sed 's/^v//g' >> $GITHUB_ENV
-
       - name: Run release script
         run: |
-          scripts/update.sh ${{ env.tag_name }}
+          scripts/update.sh
 
       - name: Create pull request
+        if: ${{ env.update_tag_name != '' }}
         uses: peter-evans/create-pull-request@v7
         with:
-          title: Update to ${{ env.tag_name }}
+          title: Update to ${{ env.update_tag_name }}
           body: |
-            This PR releases ${{ env.tag_name }}.
+            This PR releases ${{ env.update_tag_name }}.
           commit-message: |
-            Update to version ${{ env.tag_name }}
-          branch: release/${{ env.tag_name }}
+            Update to version ${{ env.update_tag_name }}
+          branch: release/${{ env.update_tag_name }}
           delete-branch: true
           reviewers: pol-rivero
