@@ -4,8 +4,10 @@
 set -e
 
 REPO_NAME="pol-rivero/github-desktop-plus"
+FLATPAK_NAME="io.github.pol_rivero.github-desktop-plus"
+
 REPO_URL="https://github.com/$REPO_NAME.git"
-YAML_FILE="io.github.pol_rivero.github-desktop-plus.yaml"
+YAML_FILE="$FLATPAK_NAME.yaml"
 SCRIPTS_DIR="$(dirname "$(realpath "$0")")"
 REPO_ROOT="$(dirname "$SCRIPTS_DIR")"
 
@@ -23,7 +25,7 @@ if [ "$OLD_VERSION" = "$VERSION" ]; then
   exit 0
 fi
 
-PR_COUNT=$(curl -s "https://api.github.com/repos/$REPO_NAME/pulls?state=open" | jq length)
+PR_COUNT=$(curl -s "https://api.github.com/repos/flathub/$FLATPAK_NAME/pulls?state=open" | jq length)
 if [ "$PR_COUNT" -gt 0 ]; then
   echo "There are open pull requests. Skipping update."
   exit 0
