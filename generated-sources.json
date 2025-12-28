@@ -6325,9 +6325,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/keytar-forked/-/keytar-forked-7.10.0.tgz#dbb78e16b18a40fc61df58124228855a7e8c912d",
-        "sha512": "32b1f721ddc18dfe1abf7cc68a104aeb636e72004e55b4f37219d244fb40d78b16463f71bbbae815af4d75d9710ba36df7c11dad0a6ed383195e7baeb15f9be7",
-        "dest-filename": "keytar-forked-7.10.0.tgz",
+        "url": "https://registry.yarnpkg.com/keytar-forked-forked/-/keytar-forked-forked-7.10.3.tgz#154e57f5c102e2bfe626a630a7eb17bdb1257c2e",
+        "sha512": "8a912b4d43b534f5e69e06219ccadd6b4c8e20e3d235b549d8146393790da332f1dd49862029f309f1037a6b8b63a1e03fead5d1cf45f8ea6dfbcf7e61d6f0eb",
+        "dest-filename": "keytar-forked-forked-7.10.3.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
