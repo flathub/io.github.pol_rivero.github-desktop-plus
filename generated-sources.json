@@ -3658,9 +3658,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.4.tgz#af5a5a11407524431456cf18836c55d13441cd8e",
-        "sha512": "cac1521440d576e429ca1cc0a1bfe492e2637f9cd69190fcfc0f72c12a756f2b9ecae09f1da9ab0816b5e3f39cda2881d1ee7507e369c52979826ce7f8cb3f9a",
-        "dest-filename": "dompurify-3.2.4.tgz",
+        "url": "https://registry.yarnpkg.com/dompurify/-/dompurify-3.3.1.tgz#c7e1ddebfe3301eacd6c0c12a4af284936dbbb86",
+        "sha512": "aa47422b32cdb6b80f14fd55a3ef7c151cc99c14467b87dfc8279af48c070757f2c4f39e3531e92ca606778524f71bcda07d19a0e8f0671369b72330aab21dd5",
+        "dest-filename": "dompurify-3.3.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -4456,9 +4456,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.5.0.tgz#2882b7d01a6825dfdf909638f2de0256351def37",
-        "sha512": "fcf95340223debe7d930038b3192b80961b522d09b7d9ff48f1ed420914284f36bc7bb5c1207ab52059b7a278233d31f1c89d40f22bc0d6619f98af2c0326e4e",
-        "dest-filename": "fast-xml-parser-4.5.0.tgz",
+        "url": "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.5.4.tgz#64e52ddf1308001893bd225d5b1768840511c797",
+        "sha512": "8c4f2e8000e760e06cbb5b9aa1ac95975b5528030d397ca3c2fbf653ab9d100d8e441843a282435a81b14e485de109f8ca1e7d25556dfe9297b633f0c7d3a0b9",
+        "dest-filename": "fast-xml-parser-4.5.4.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -7858,9 +7858,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/process-proxy/-/process-proxy-0.5.0.tgz#dd927887f6913351ea843405eac942be8510b5d9",
-        "sha512": "5e2435b5a8c1c239e0a49cc6ada5bfddb6a21967a8af117c45cc389cfb8a3a7e82884215ec5c7e92aa8a44de9ff18d3d6f1a7d21d0004006c92bd0715940d559",
-        "dest-filename": "process-proxy-0.5.0.tgz",
+        "url": "https://registry.yarnpkg.com/process-proxy/-/process-proxy-0.6.0.tgz#6871a14a01218a2ca6f0c348255894dd32415d17",
+        "sha512": "21ceec53f5d040127599d77cccb72b3da914760e51aca9892a4dc157ee6c2f36d585045d4313ab1b5c9c034747786af54f01561e0dfbc40ad888b10e881c7d90",
+        "dest-filename": "process-proxy-0.6.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
