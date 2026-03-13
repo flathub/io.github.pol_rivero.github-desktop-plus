@@ -48,16 +48,16 @@
     },
     {
         "type": "archive",
-        "url": "https://www.electronjs.org/headers/v40.1.0/node-v40.1.0-headers.tar.gz",
+        "url": "https://www.electronjs.org/headers/v40.8.1/node-v40.8.1-headers.tar.gz",
         "strip-components": 1,
-        "sha256": "8958745dd0c9004b685f8cb5446b43556b5a4ab7863b55bd2ad3ed3adb6bce00",
-        "dest": "flatpak-node/cache/node-gyp/40.1.0"
+        "sha256": "ae5bf1069b36fc007510cee2ca26c3c1d6ccf37c1027bad141c99bdce613f449",
+        "dest": "flatpak-node/cache/node-gyp/40.8.1"
     },
     {
         "type": "file",
-        "url": "https://github.com/desktop/dugite-native/releases/download/v2.53.0/dugite-native-v2.53.0-6981a1f-ubuntu-x64.tar.gz",
-        "sha256": "3c7eed853f5d07a35c6e7e72735d473c08d8f0c414ab95b90f8bd9aeca3ad4f0",
-        "dest-filename": "dugite-native-v2.53.0-6981a1f-ubuntu-x64.tar.gz",
+        "url": "https://github.com/desktop/dugite-native/releases/download/v2.53.0-2/dugite-native-v2.53.0-8635780-ubuntu-x64.tar.gz",
+        "sha256": "2c3371c16b8a0c8916ab8076a3b1e2bea1b532af83d5e0988f6b6d66c58e3955",
+        "dest-filename": "dugite-native-v2.53.0-8635780-ubuntu-x64.tar.gz",
         "dest": "flatpak-node/tmp",
         "only-arches": [
             "x86_64"
@@ -65,16 +65,16 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v40.1.0/SHASUMS256.txt",
-        "sha256": "003bb92c5d8315a61403e79592d34015b16112909bd192ff42070fbc1cc36e27",
-        "dest-filename": "SHASUMS256.txt-40.1.0",
+        "url": "https://github.com/electron/electron/releases/download/v40.8.1/SHASUMS256.txt",
+        "sha256": "6133a5a5dc1a96f2d89d805d0a6e1980cab86f9e40b90cb8db0ba83b0b82360d",
+        "dest-filename": "SHASUMS256.txt-40.8.1",
         "dest": "flatpak-node/cache/electron"
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v40.1.0/electron-v40.1.0-linux-arm64.zip",
-        "sha256": "4f07ff00445a707289d46f52dffd6faa504a4b60355ddb20df36ff8daa5cfc70",
-        "dest-filename": "electron-v40.1.0-linux-arm64.zip",
+        "url": "https://github.com/electron/electron/releases/download/v40.8.1/electron-v40.8.1-linux-arm64.zip",
+        "sha256": "2aa7fce3e1e6fd557aef9502b5eb1b0b190a5d25dc9a20b678b237fc757565f6",
+        "dest-filename": "electron-v40.8.1-linux-arm64.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "aarch64"
@@ -82,9 +82,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v40.1.0/electron-v40.1.0-linux-armv7l.zip",
-        "sha256": "953ab4b20661a1e6f7d2acadb5e57f67927ea5ad4cb8cf93d5a9634cca7f1f2f",
-        "dest-filename": "electron-v40.1.0-linux-armv7l.zip",
+        "url": "https://github.com/electron/electron/releases/download/v40.8.1/electron-v40.8.1-linux-armv7l.zip",
+        "sha256": "1c568d0e57190aa0ed2e3207a85f49d4e7fb688cadfa7ae6b94e473b68faf1a7",
+        "dest-filename": "electron-v40.8.1-linux-armv7l.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "arm"
@@ -92,9 +92,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v40.1.0/electron-v40.1.0-linux-x64.zip",
-        "sha256": "26f7675cc103f6ca0a1122d82f30bed7544c1a5d5507a6980992ae07ec876a12",
-        "dest-filename": "electron-v40.1.0-linux-x64.zip",
+        "url": "https://github.com/electron/electron/releases/download/v40.8.1/electron-v40.8.1-linux-x64.zip",
+        "sha256": "44e0b3bb119222e57661e28f024ae12bba6f6653fc66734d0ac06fe240c9b59f",
+        "dest-filename": "electron-v40.8.1-linux-x64.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "x86_64"
@@ -882,6 +882,62 @@
         "url": "https://registry.yarnpkg.com/@github/browserslist-config/-/browserslist-config-1.0.0.tgz#952fe6da3e6b8ed6a368f3a1a08a9d2ef84e8d04",
         "sha512": "808863749a7f7366de688596225b1776a5d5454cf7af6071042a5fcff1772571ef480435a5a3188cb1fe99a1004ed10d83e93978b57b800fbdc8fa7beb689ebb",
         "dest-filename": "@github-browserslist-config-1.0.0.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot-darwin-arm64/-/copilot-darwin-arm64-0.0.420.tgz#560ca002fa491c04fdb6f74f84fee87e52575c53",
+        "sha512": "b23f0ec5c7f7a0a0db794a2d9b682dab9614d65c02b77408cdb3198a8143fcf30b39ea925ffc2b79c23e7340c36172a87c58402dbd3e0f1c675a06c4b349a791",
+        "dest-filename": "@github-copilot-darwin-arm64-0.0.420.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot-darwin-x64/-/copilot-darwin-x64-0.0.420.tgz#1d5cf40ac4e04bbd69fb0a79abf3743897c5f795",
+        "sha512": "d9a700f7722a5f3d6ebb3dd35549b463b055ac1af43324a1d6441af0ba8c20b853b06d181d1326f326f34e9d8703b322d6d9790a3a8c4a4d7ade4912ececdf50",
+        "dest-filename": "@github-copilot-darwin-x64-0.0.420.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot-linux-arm64/-/copilot-linux-arm64-0.0.420.tgz#e247517854927a14f5c076bfa99309160afec2d7",
+        "sha512": "87f22f12bc933989b51f347618dabcb36683b4de25bd3e0cc6575f66e4b8d82b5624339f546da32cbb281d65354f7415f23d7ef8f983804fff1d7d092e92ccc3",
+        "dest-filename": "@github-copilot-linux-arm64-0.0.420.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot-linux-x64/-/copilot-linux-x64-0.0.420.tgz#00d22974499f0fab6354fe4e22f6be59b800ab98",
+        "sha512": "88bd8da59bd720367ede5c3bb0ed9fa394f49ca98fe5d65b53681d61cbfe485066fce3610b1218e55457e3237ff5590569af5e3efe49cc29ec977bd920d883c6",
+        "dest-filename": "@github-copilot-linux-x64-0.0.420.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot-sdk/-/copilot-sdk-0.1.29.tgz#8809df61ab53f100f8390234d9946cdc2acae24b",
+        "sha512": "19d70de9b25379eb2bd473fa22b84dd8cce721fd41dee7ea7773d7fae29b0cb5cdae23a63fae408b6f7f871cd389d34b1f239feab5b83709857e431788a7c207",
+        "dest-filename": "@github-copilot-sdk-0.1.29.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot-win32-arm64/-/copilot-win32-arm64-0.0.420.tgz#733c45aced1e42c2877ae44012074abbcce3d55d",
+        "sha512": "36395cda3f6f6120402fe942e85204850dc2f95c4edf16afc0a9f0d1e71546234b7062f23eb4ddccf7cf40e9848c2eb7829542a8b69b8a4a031aff1fb8b3c0db",
+        "dest-filename": "@github-copilot-win32-arm64-0.0.420.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot-win32-x64/-/copilot-win32-x64-0.0.420.tgz#d45f47f2f08d4bba87760b8afb21af19d1988780",
+        "sha512": "ad9947df9a0d7a100fd83bd06eee2f40554d78287fd69deb52369f058684634364871ed199dad806295e2f95373ed44f3d1b013daab7429fa9548ac6a020cbcd",
+        "dest-filename": "@github-copilot-win32-x64-0.0.420.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@github/copilot/-/copilot-0.0.420.tgz#596349de076566a310836a7e06e6807b87ea6bfe",
+        "sha512": "5293ee4a3c54c50fa3d365a364415f7d67f4b1c2dbdb72efb861f3305b5a4acc1e47e3ff05d6ed0d4239643200e93d2d572cadebe5f5fef81fb09891a9dea38a",
+        "dest-filename": "@github-copilot-0.0.420.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -3658,9 +3714,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/dompurify/-/dompurify-3.3.1.tgz#c7e1ddebfe3301eacd6c0c12a4af284936dbbb86",
-        "sha512": "aa47422b32cdb6b80f14fd55a3ef7c151cc99c14467b87dfc8279af48c070757f2c4f39e3531e92ca606778524f71bcda07d19a0e8f0671369b72330aab21dd5",
-        "dest-filename": "dompurify-3.3.1.tgz",
+        "url": "https://registry.yarnpkg.com/dompurify/-/dompurify-3.3.2.tgz#58c515d0f8508b8749452a028aa589ad80b36325",
+        "sha512": "ea86e08649622dd98a6b9eb175b2cea54678de9011eb1172d6e3abc416880e34fec9a46ebb26cb8c64bd795068491fd43d4e5fab73970a51072c9346bdbc4aa5",
+        "dest-filename": "dompurify-3.3.2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -3693,9 +3749,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/dugite/-/dugite-3.2.0.tgz#e2b3ba579f4cf50366e06d994064d7ee23ade86f",
-        "sha512": "6209c029ca63c42f73af73f57c37801c5e75e2e35fc15d738ae74ef1a6e5149d7ac36d501cbdc41c386453ae189ea2886bcf266ca51c4348df69afb0b8a924d6",
-        "dest-filename": "dugite-3.2.0.tgz",
+        "url": "https://registry.yarnpkg.com/dugite/-/dugite-3.2.1.tgz#7fdab246449f8db5aa21b0284b78b140d0dbb2ca",
+        "sha512": "c79443f003bff721dd6d53a90923135acd2b3dfb7c5b635992c4de0db48fa084b5cdfcd02159e2165200fca62ffe3e4d5fa5213512ef4a280a010fbe65983b3a",
+        "dest-filename": "dugite-3.2.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -3805,9 +3861,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/electron/-/electron-40.1.0.tgz#e5c45ecd90bfbaa9dd14db2f7fb5ab730e458a9e",
-        "sha512": "da3fe4bf0eee1741f53e7cd8073c3693643aab5e89f13a0aaed43365fb00a176db318d25e60422d832ce6ae2192f3c29e0ed359fc5adffbe098524701b4ca3f4",
-        "dest-filename": "electron-40.1.0.tgz",
+        "url": "https://registry.yarnpkg.com/electron/-/electron-40.8.1.tgz#8d1599c28e092f4c73a06393ea4e0e152d9ab118",
+        "sha512": "a0b05bfa1b3fcd4a63a9d79cf9f59dc5012bc2238458d8e925e4c5985f110275c1d305e086d2bc1c701b431661764765052b83e17ef5d429a29af63f8eb94e9f",
+        "dest-filename": "electron-40.8.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -8635,13 +8691,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/shescape/-/shescape-2.1.6.tgz#6185c81049e7e2d510d5b33cabf820b1eaa0b743",
-        "sha512": "73d36cd48f939744c2f9ca6c393d4579972f15a95f77459f1de0ff08c71c247db4c70a1c866273aba02ab5e9e7765c80c3f0548b704c72ff767582d5aea5fe77",
-        "dest-filename": "shescape-2.1.6.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.yarnpkg.com/side-channel/-/side-channel-1.0.4.tgz#efce5c8fdc104ee751b25c58d4290011fa5ea2cf",
         "sha512": "ab95cfcada85108287906762308ad8d749af2d1be7421e36ffe1a8065156ddbd8b5cb136c71269645766f78c1ed016a85774702721aa839c12edea714efd19bf",
         "dest-filename": "side-channel-1.0.4.tgz",
@@ -9832,6 +9881,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-8.2.1.tgz#a322cc0f1d97f794ffd9c4cd2a898a0bde097f34",
+        "sha512": "91d8ce489da52c89fbaf5aedacc6db3421e3c8c3df467a3074a8c143e986aba3405b9418d9b1190bf921682e4e47cb2f6db8ef2c46885e43aae397b65fd0486d",
+        "dest-filename": "vscode-jsonrpc-8.2.1.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.yarnpkg.com/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.1.tgz#178168e87efad6171b372add1dea34f53e5d330f",
         "sha512": "5087090e35fb20591c93b71290d372cc8cf9172be941f63bb1dcd5cbec2428dfc12da0f80d0d29a5742b29e3e8982c534bb46ba252b5234a5ecb46c6f5e87c74",
         "dest-filename": "vscode-languageserver-textdocument-1.0.1.tgz",
@@ -10237,10 +10293,23 @@
         "dest": "flatpak-node/yarn-mirror"
     },
     {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/zod/-/zod-4.3.6.tgz#89c56e0aa7d2b05107d894412227087885ab112a",
+        "sha512": "adfb65ae484764e7230f090696752d65992f68f1c2b03013a78a46a6e38e3036937430d717dd70b950c9a16a0fb0a5ffdd83d0e5f1ee1774938dc6322abf9086",
+        "dest-filename": "zod-4.3.6.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
         "type": "inline",
         "contents": "9",
         "dest-filename": "installVersion",
         "dest": "flatpak-node/cache/node-gyp/40.1.0"
+    },
+    {
+        "type": "inline",
+        "contents": "9",
+        "dest-filename": "installVersion",
+        "dest": "flatpak-node/cache/node-gyp/40.8.1"
     },
     {
         "type": "script",
@@ -10279,47 +10348,6 @@
         "type": "shell",
         "commands": [
             "bash flatpak-node/setup_sdk_node_headers.sh"
-        ]
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97\"",
-            "ln -s \"../SHASUMS256.txt-40.1.0\" \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97/SHASUMS256.txt\""
-        ],
-        "dest": "flatpak-node/cache/electron"
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97\"",
-            "ln -s \"../electron-v40.1.0-linux-arm64.zip\" \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97/electron-v40.1.0-linux-arm64.zip\""
-        ],
-        "dest": "flatpak-node/cache/electron",
-        "only-arches": [
-            "aarch64"
-        ]
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97\"",
-            "ln -s \"../electron-v40.1.0-linux-armv7l.zip\" \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97/electron-v40.1.0-linux-armv7l.zip\""
-        ],
-        "dest": "flatpak-node/cache/electron",
-        "only-arches": [
-            "arm"
-        ]
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "mkdir -p \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97\"",
-            "ln -s \"../electron-v40.1.0-linux-x64.zip\" \"7640e13cbf91159081cab2bc4a434dc5d9c6603e3d4fc77b518d955a36752a97/electron-v40.1.0-linux-x64.zip\""
-        ],
-        "dest": "flatpak-node/cache/electron",
-        "only-arches": [
-            "x86_64"
         ]
     },
     {
@@ -10373,8 +10401,16 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv40.1.0electron-v40.1.0-linux-arm64.zip\"",
-            "ln -s \"../electron-v40.1.0-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv40.1.0electron-v40.1.0-linux-arm64.zip/electron-v40.1.0-linux-arm64.zip\""
+            "mkdir -p \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862\"",
+            "ln -s \"../SHASUMS256.txt-40.8.1\" \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862/SHASUMS256.txt\""
+        ],
+        "dest": "flatpak-node/cache/electron"
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862\"",
+            "ln -s \"../electron-v40.8.1-linux-arm64.zip\" \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862/electron-v40.8.1-linux-arm64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -10384,8 +10420,8 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv40.1.0electron-v40.1.0-linux-armv7l.zip\"",
-            "ln -s \"../electron-v40.1.0-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv40.1.0electron-v40.1.0-linux-armv7l.zip/electron-v40.1.0-linux-armv7l.zip\""
+            "mkdir -p \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862\"",
+            "ln -s \"../electron-v40.8.1-linux-armv7l.zip\" \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862/electron-v40.8.1-linux-armv7l.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -10395,8 +10431,41 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv40.1.0electron-v40.1.0-linux-x64.zip\"",
-            "ln -s \"../electron-v40.1.0-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv40.1.0electron-v40.1.0-linux-x64.zip/electron-v40.1.0-linux-x64.zip\""
+            "mkdir -p \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862\"",
+            "ln -s \"../electron-v40.8.1-linux-x64.zip\" \"ca312d74c6fa428cc6f43d063ca2ce695faffd42da624990b0445e78f5904862/electron-v40.8.1-linux-x64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "x86_64"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv40.8.1electron-v40.8.1-linux-arm64.zip\"",
+            "ln -s \"../electron-v40.8.1-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv40.8.1electron-v40.8.1-linux-arm64.zip/electron-v40.8.1-linux-arm64.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "aarch64"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv40.8.1electron-v40.8.1-linux-armv7l.zip\"",
+            "ln -s \"../electron-v40.8.1-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv40.8.1electron-v40.8.1-linux-armv7l.zip/electron-v40.8.1-linux-armv7l.zip\""
+        ],
+        "dest": "flatpak-node/cache/electron",
+        "only-arches": [
+            "arm"
+        ]
+    },
+    {
+        "type": "shell",
+        "commands": [
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv40.8.1electron-v40.8.1-linux-x64.zip\"",
+            "ln -s \"../electron-v40.8.1-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv40.8.1electron-v40.8.1-linux-x64.zip/electron-v40.8.1-linux-x64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -10405,9 +10474,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/desktop/dugite-native/releases/download/v2.53.0/dugite-native-v2.53.0-6981a1f-ubuntu-arm64.tar.gz",
-        "sha256": "165b909437c1a9669ed989bd6ca6cfc2dcd9bc56d36760b6006cba5f2be7925c",
-        "dest-filename": "dugite-native-v2.53.0-6981a1f-ubuntu-arm64.tar.gz",
+        "url": "https://github.com/desktop/dugite-native/releases/download/v2.53.0-2/dugite-native-v2.53.0-8635780-ubuntu-arm64.tar.gz",
+        "sha256": "a38c3f0609acc2b8c3c5790480471646bf0a1bd48484ef34563855da71d52c39",
+        "dest-filename": "dugite-native-v2.53.0-8635780-ubuntu-arm64.tar.gz",
         "dest": "flatpak-node/tmp",
         "only-arches": [
             "aarch64"
