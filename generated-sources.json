@@ -6325,9 +6325,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/keytar-forked-forked/-/keytar-forked-forked-7.10.3.tgz#154e57f5c102e2bfe626a630a7eb17bdb1257c2e",
-        "sha512": "8a912b4d43b534f5e69e06219ccadd6b4c8e20e3d235b549d8146393790da332f1dd49862029f309f1037a6b8b63a1e03fead5d1cf45f8ea6dfbcf7e61d6f0eb",
-        "dest-filename": "keytar-forked-forked-7.10.3.tgz",
+        "url": "https://registry.yarnpkg.com/keytar/-/keytar-7.9.0.tgz#4c6225708f51b50cbf77c5aae81721964c2918cb",
+        "sha512": "54f0fc9ad56d9b924db40d8012b97a0a1a74e8905fcbb762150ed341085da563a5e8cac2441f9e45bbc0654b1b1904bd92232ad1ca09b32d16d2f1e90c2916b1",
+        "dest-filename": "keytar-7.9.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -7126,6 +7126,13 @@
         "url": "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-3.1.0.tgz#98b21931557466c6729e51cb77cd39c965f42239",
         "sha512": "7e59ab0cd074e8b225e65cb0533ed894d1991ffe69d0ced6dbc93c87377d2ec86d761d70b210f663e53887d2c3e8a39b3b2d5ff9f115760a6b3eb1329a3339bb",
         "dest-filename": "node-addon-api-3.1.0.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-4.3.0.tgz#52a1a0b475193e0928e98e0426a0d1254782b77f",
+        "sha512": "ef7b04f7edd468b6181660ec1599ea0889f33f287732a23064ef5cc39f3222a01984e36bada6eb63261edd3b88aad2223ae4d7561b066aef2172b861c12b0321",
+        "dest-filename": "node-addon-api-4.3.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
