@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     root = os.path.dirname(__file__)
     generated_sources_path = f"{root}/generated-sources.json"
-    subprocess.call(
+    result = subprocess.call(
         [
             ".venv/bin/flatpak-node-generator",
             "yarn",
@@ -74,6 +74,8 @@ if __name__ == "__main__":
         ],
         cwd=root,
     )
+    if result != 0:
+        exit(result)
 
     with open(generated_sources_path, "r") as fp:
         generated_sources = json.load(fp)

@@ -1,6 +1,41 @@
 [
     {
         "type": "archive",
+        "url": "https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-headless-shell-linux64.zip",
+        "strip-components": 0,
+        "sha256": "2536e97d8f410df0394b3e7c4252e88ce9f239f04f3af4e247a26caf45baf49e",
+        "dest": "flatpak-node/cache/ms-playwright/chromium-headless-shell-1208"
+    },
+    {
+        "type": "archive",
+        "url": "https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip",
+        "strip-components": 0,
+        "sha256": "b5e3195041af345a668d110f5daf5581961fa3608626ea588c97dd0fe81c4e38",
+        "dest": "flatpak-node/cache/ms-playwright/chromium-1208"
+    },
+    {
+        "type": "archive",
+        "url": "https://cdn.playwright.dev/builds/ffmpeg/1011/ffmpeg-linux.zip",
+        "strip-components": 0,
+        "sha256": "ebc74fc5b94830176a3c2914ae96bd8bc7f6a91f4f33890230f84a172ee61ccc",
+        "dest": "flatpak-node/cache/ms-playwright/ffmpeg-1011"
+    },
+    {
+        "type": "archive",
+        "url": "https://cdn.playwright.dev/builds/firefox/1509/firefox-ubuntu-22.04.zip",
+        "strip-components": 0,
+        "sha256": "3c2fad29c819bb82d7ae55ab0b83c9dd1d7f9ee9dd686b50965fed4b97c6aa93",
+        "dest": "flatpak-node/cache/ms-playwright/firefox-1509"
+    },
+    {
+        "type": "archive",
+        "url": "https://cdn.playwright.dev/builds/webkit/2248/webkit-ubuntu-24.04.zip",
+        "strip-components": 0,
+        "sha256": "c8ea5ee749558b9aeb50c00dd833dfb80e3719a150f5363749aa9699c896de2c",
+        "dest": "flatpak-node/cache/ms-playwright/webkit-2248"
+    },
+    {
+        "type": "archive",
         "url": "https://electronjs.org/headers/v40.1.0/node-v40.1.0-headers.tar.gz",
         "strip-components": 1,
         "sha256": "8958745dd0c9004b685f8cb5446b43556b5a4ab7863b55bd2ad3ed3adb6bce00",
@@ -1113,6 +1148,13 @@
         "url": "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.1.tgz#1ec17e2edbec25c8306d424ecfbf13c7de1aaa31",
         "sha512": "72af28e1c587d226d787d5468b93f6d13bbd5c5ff47c55e5f445229ebf507d333b6bba74a13038889442416a695d1d4f83c75233450222d0a43f0b24f6a59660",
         "dest-filename": "@pkgr-core-0.1.1.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/@playwright/test/-/test-1.58.2.tgz#b0ad585d2e950d690ef52424967a42f40c6d2cbd",
+        "sha512": "6a479afba6c760105f03db90a926269495e7eb57136be8db3bcef154b0966d3a9b59a75156687195701368e8ce81c05a594e1e3e8d30078d4a305bf7a37e485c",
+        "dest-filename": "@playwright-test-1.58.2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -4799,6 +4841,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a",
+        "sha512": "c62a8c411e3101e1d3b81f6e5a6f9f1517083a02813223813fe7978b24fb8ec8150aad5b915ca0b74d28012a3007b11db6938769a3e02adf35d8ff5a6fe0c328",
+        "dest-filename": "fsevents-2.3.2.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6",
         "sha512": "e71a037d7f9f2fb7da0139da82658fa5b16dc21fd1efb5a630caaa1c64bae42defbc1d181eb805f81d58999df8e35b4c8f99fade4d36d765cda09c339617df43",
         "dest-filename": "fsevents-2.3.3.tgz",
@@ -7753,6 +7802,20 @@
     },
     {
         "type": "file",
+        "url": "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.58.2.tgz#ac5f5b4b10d29bcf934415f0b8d133b34b0dcb13",
+        "sha512": "c99904b5fb60c12f02b1f628ee79b4284f23b2f9ba8bf3d3815b41f032fbdbac0d7fa1f620cb03bb10a9263e7d2836b10ad4a7ad66a7d80783a8cec905aba5b6",
+        "dest-filename": "playwright-core-1.58.2.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/playwright/-/playwright-1.58.2.tgz#afe547164539b0bcfcb79957394a7a3fa8683cfd",
+        "sha512": "bc0df41fc36f92afdc3c19cdc3843c4d6cf5109caa829ba29c1707113d1854954595dafc24336253d2da5801352aa4a44586b3b9a0614e90796734a139ecd0e8",
+        "dest-filename": "playwright-1.58.2.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.yarnpkg.com/plist/-/plist-3.0.6.tgz#7cfb68a856a7834bca6dbfe3218eb9c7740145d3",
         "sha512": "5a2215632ae9f130f8c3cc82bf2788afe9649ab191779bb455b46753eb4ffda44bc4ffd869d25460e31927fea121ade8532542b32717bed35181de5704921b88",
         "dest-filename": "plist-3.0.6.tgz",
@@ -10308,15 +10371,45 @@
     },
     {
         "type": "inline",
-        "contents": "9",
+        "contents": "11",
         "dest-filename": "installVersion",
         "dest": "flatpak-node/cache/node-gyp/40.1.0"
     },
     {
         "type": "inline",
-        "contents": "9",
+        "contents": "11",
         "dest-filename": "installVersion",
         "dest": "flatpak-node/cache/node-gyp/40.8.1"
+    },
+    {
+        "type": "inline",
+        "contents": "flatpak-node-cache",
+        "dest-filename": "INSTALLATION_COMPLETE",
+        "dest": "flatpak-node/cache/ms-playwright/chromium-1208"
+    },
+    {
+        "type": "inline",
+        "contents": "flatpak-node-cache",
+        "dest-filename": "INSTALLATION_COMPLETE",
+        "dest": "flatpak-node/cache/ms-playwright/chromium-headless-shell-1208"
+    },
+    {
+        "type": "inline",
+        "contents": "flatpak-node-cache",
+        "dest-filename": "INSTALLATION_COMPLETE",
+        "dest": "flatpak-node/cache/ms-playwright/ffmpeg-1011"
+    },
+    {
+        "type": "inline",
+        "contents": "flatpak-node-cache",
+        "dest-filename": "INSTALLATION_COMPLETE",
+        "dest": "flatpak-node/cache/ms-playwright/firefox-1509"
+    },
+    {
+        "type": "inline",
+        "contents": "flatpak-node-cache",
+        "dest-filename": "INSTALLATION_COMPLETE",
+        "dest": "flatpak-node/cache/ms-playwright/webkit-2248"
     },
     {
         "type": "script",
@@ -10346,7 +10439,7 @@
             "nodedir=$(dirname \"$(dirname \"$(which node)\")\")",
             "mkdir -p \"flatpak-node/cache/node-gyp/$version\"",
             "ln -s \"$nodedir/include\" \"flatpak-node/cache/node-gyp/$version/include\"",
-            "echo 9 > \"flatpak-node/cache/node-gyp/$version/installVersion\""
+            "echo 11 > \"flatpak-node/cache/node-gyp/$version/installVersion\""
         ],
         "dest-filename": "setup_sdk_node_headers.sh",
         "dest": "flatpak-node"
