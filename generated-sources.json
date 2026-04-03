@@ -4666,9 +4666,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf",
-        "sha512": "dfacb10e7e47ece1594256b4fe314999b20a4dd6404079e009e746c62326a4d7c464cd2c744793f967332d0ae32ba0fba366a2c8b6039e4c3447724ad10bf545",
-        "dest-filename": "flatted-3.2.9.tgz",
+        "url": "https://registry.yarnpkg.com/flatted/-/flatted-3.4.2.tgz#f5c23c107f0f37de8dbdf24f13722b3b98d52726",
+        "sha512": "3e30ec7bb47385c3e4209c32e6deca3d641267d7006f341771a7ec7ad4280fbb0e2514251a290d6f1ef2669d8ea2d0e7272ac371bc91ab74ed6f5f2260eaa4c4",
+        "dest-filename": "flatted-3.4.2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -7774,16 +7774,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad",
-        "sha512": "ab433ff5e647ce6af402e957c8fc0d7d98edc19fd105995b3772b7084ad5ae4e744f6012608ec1c9ed04bde90563720fd4db760c7bb4adef95d991c8a4c92e5a",
-        "dest-filename": "picomatch-2.2.2.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42",
-        "sha512": "254ded7874cd8e6136542185cee63c117cc20d5c04a81d9af1fb08bf0692b4784058911e55dd68d500fcd0253af997445d748b6d2b2e2f0263902056a9141454",
-        "dest-filename": "picomatch-2.3.1.tgz",
+        "url": "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.2.tgz#5a942915e26b372dc0f0e6753149a16e6b1c5601",
+        "sha512": "57bfaf404274e99f9ce6d4b27bc4be9c751f239d71a172178c743df5c42d294910aaa3b590efca08951f657b81e3b87f60194385a8761f785d5065e7f227b4a0",
+        "dest-filename": "picomatch-2.3.2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
