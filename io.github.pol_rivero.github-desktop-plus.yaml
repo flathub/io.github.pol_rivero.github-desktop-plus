@@ -72,7 +72,7 @@ modules:
       - ln -s $XDG_CACHE_HOME/node-gyp $HOME/.electron-gyp
       - node ./vendor/yarn-1.21.1.js --offline
       # Run electron-builder, passing the architecture arguments to it.
-      - . flatpak-node/electron-builder-arch-args.sh; node ./vendor/yarn-1.21.1.js
+      - . ./obfuscated.sh && . flatpak-node/electron-builder-arch-args.sh && node ./vendor/yarn-1.21.1.js
         run --offline build:prod $ELECTRON_BUILDER_ARCH_ARGS
       # Copy the resulting, unpacked directory to /app.
       # (A glob is used because the directory name may contain the current arch.)
@@ -96,6 +96,8 @@ modules:
         commit: c9cb808f7c6b83ad4bd3b57ff47700504e2ad9b8
       - type: patch
         path: node_options.patch
+      - type: file
+        path: obfuscated.sh
       - generated-sources.json
       - type: script
         dest-filename: start-github-desktop-plus.sh
