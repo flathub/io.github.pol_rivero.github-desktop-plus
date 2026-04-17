@@ -56,7 +56,7 @@ modules:
         # Use predownloaded dugite-native
         TMPDIR: /run/build/github-desktop-plus/flatpak-node/tmp
         XDG_CACHE_HOME: /run/build/github-desktop-plus/flatpak-node/cache
-        APP_VERSION: 3.5.7.3
+        APP_VERSION: 3.5.8.0
     build-commands:
       # Symlink libcurl-gnutls
       - mkdir -p /app/lib
@@ -92,8 +92,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/pol-rivero/github-desktop-plus.git
-        tag: v3.5.7.3
-        commit: c9cb808f7c6b83ad4bd3b57ff47700504e2ad9b8
+        tag: v3.5.8.0
+        commit: 97d29f81428f0efaf70fb0755ac63fea2bbc3680
       - type: patch
         path: node_options.patch
       - type: file
