@@ -949,30 +949,30 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@github/copilot-darwin-arm64/-/copilot-darwin-arm64-1.0.41-0.tgz#7a93cd0b97c16aedf8ee6efb30b41f2c600309f8",
-        "sha512": "96bac7d6831b4ce1755bf6311faaefa041ceca6c665da331e1a0f39b5f74854d1887a0aebb4049185be01bc9c4f5ba9cbf93bc5bb78406bdba8c3946b67662c2",
-        "dest-filename": "@github-copilot-darwin-arm64-1.0.41-0.tgz",
+        "url": "https://registry.yarnpkg.com/@github/copilot-darwin-arm64/-/copilot-darwin-arm64-1.0.45.tgz#d254a04f98e0d6fe6275bb84bacf1c167160f805",
+        "sha512": "802272d6738858be65a4b1494d19362b3edb4b7d1e9a4038a7880cf8f279fdd3b035104ec943b4ff67f4dff9b9bd82f80cd77f4f8edc14837ab3cda021200861",
+        "dest-filename": "@github-copilot-darwin-arm64-1.0.45.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@github/copilot-darwin-x64/-/copilot-darwin-x64-1.0.41-0.tgz#aabb64521367903cbc36e37660187d4a45407a28",
-        "sha512": "e38d7c56d492904827e0173008583ed140e11827d08064f1d7aaff3e259bb943a0201cedb3715f57358c593b97cb193b925d886fc93b29277feeb3698dcaf307",
-        "dest-filename": "@github-copilot-darwin-x64-1.0.41-0.tgz",
+        "url": "https://registry.yarnpkg.com/@github/copilot-darwin-x64/-/copilot-darwin-x64-1.0.45.tgz#0a1fd5eef0ba004adc48effa063bfc2425ca09e9",
+        "sha512": "9cbcc2ec2d22fd6018fb816e907b8e3410cd78a500a8105a6f79f7e9a11da6ac550cfe61d936f3836c9286a6afd9b951eca0c92fb60c7184d51719b07d08fec9",
+        "dest-filename": "@github-copilot-darwin-x64-1.0.45.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@github/copilot-linux-arm64/-/copilot-linux-arm64-1.0.41-0.tgz#af19553c3e358630a564167855b8afd930561d71",
-        "sha512": "e718e0a77024e5027af1bc8d6ec801a5d2b557a4f9b7c106bb4a54c0424c34c317c6abcbf5fee03dc9c219d4ed5760d2e10dda764ce257f829052490e4763c86",
-        "dest-filename": "@github-copilot-linux-arm64-1.0.41-0.tgz",
+        "url": "https://registry.yarnpkg.com/@github/copilot-linux-arm64/-/copilot-linux-arm64-1.0.45.tgz#65cb150249a52d3dc518816354dd0d140825c682",
+        "sha512": "31d44d65434cac8d1da50f83883a1943b01b8ad429f5e37b8abd7be996b629fedd914c4fc268a8df6ca145b052f3531c53abc1c3c702cc466f8b0bff8dcf1bb9",
+        "dest-filename": "@github-copilot-linux-arm64-1.0.45.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@github/copilot-linux-x64/-/copilot-linux-x64-1.0.41-0.tgz#d811210529d6b6661935d95dc2f1cb11ba29e4ca",
-        "sha512": "a163e48f46d28c18ed02aa27304643ec4b9207204d5f0b5c78cc3ccbbb8639fb3a8d05df8431b308207a3466fe95c7ed54db560ca14252dc7ec7c15bb783b7ef",
-        "dest-filename": "@github-copilot-linux-x64-1.0.41-0.tgz",
+        "url": "https://registry.yarnpkg.com/@github/copilot-linux-x64/-/copilot-linux-x64-1.0.45.tgz#6f10975fd8b1b4afec3573d87de4d6b57e396061",
+        "sha512": "c524548d603ec2b4928e4b494a336d892ff8ec2cb43ef88f7a38fb4549ad0a1b0f7c3241f305b6899e8d7e97620289adc40cf9c71e008db8d3d48e1bd45aa7c0",
+        "dest-filename": "@github-copilot-linux-x64-1.0.45.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -984,23 +984,23 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@github/copilot-win32-arm64/-/copilot-win32-arm64-1.0.41-0.tgz#8f322ab44e04dab00a365a1f0a35cc109e008eea",
-        "sha512": "31a3e0e2d1564e246ecaffa3d329896d9a7c50f2be4485cd3297a447b1517fcfd4cfe3622604d3c530e3162e32b51254e5436b51ece45409395ddbaafc26887b",
-        "dest-filename": "@github-copilot-win32-arm64-1.0.41-0.tgz",
+        "url": "https://registry.yarnpkg.com/@github/copilot-win32-arm64/-/copilot-win32-arm64-1.0.45.tgz#de4503573a32fccae28ce0521ed027ab8fce99f1",
+        "sha512": "96171394ab3b316333217bf6d61512a4be1a156e3d8ea56136b40a681f2c624da7cef19126f3704dc052d539f99dd5e53f343d3ffa7d07a079bb0c26675bc71f",
+        "dest-filename": "@github-copilot-win32-arm64-1.0.45.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@github/copilot-win32-x64/-/copilot-win32-x64-1.0.41-0.tgz#80a4e03e9b17bb206d7ddb6053384cb8478756d6",
-        "sha512": "ca446e0d68c91204b2c0c149975c9a79fb2c6a4942552561a6bc7635c49587ab481aea6fbf354033a9cbe8c8fa9f22a91ba14a1876a779d05e2fa48973ddf973",
-        "dest-filename": "@github-copilot-win32-x64-1.0.41-0.tgz",
+        "url": "https://registry.yarnpkg.com/@github/copilot-win32-x64/-/copilot-win32-x64-1.0.45.tgz#2f01d7b581378f1aa515df361c8d9d5945f3a0d5",
+        "sha512": "5d867df373509a8a15aff9fea429c7228ac199fd61777a35acc9520287701bf5459506b2746a0eb35175367b71581a0500d0fe78ce8de0f65fc3c33cb116b27c",
+        "dest-filename": "@github-copilot-win32-x64-1.0.45.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@github/copilot/-/copilot-1.0.41-0.tgz#ba21a778547faa6731ff34c6c6b2cd1f49db1ff2",
-        "sha512": "80bc8269d059749789b47248dd774df300262cc1147577c26b711c5676dd6d5d4d1d90c0261afb878d65edae3da6a440989c8b50a964d4ba2493b53e383ded83",
-        "dest-filename": "@github-copilot-1.0.41-0.tgz",
+        "url": "https://registry.yarnpkg.com/@github/copilot/-/copilot-1.0.45.tgz#97fc0e96f27ea404a9267d6e613d584217fbe355",
+        "sha512": "d90003810730fddd0616a4eadbe9c7c17d79d9946f6715b408738d1b9775442b3a609b5daff19d6e731861e447d818812219df91cbc5e74226091bec4b94e7c2",
+        "dest-filename": "@github-copilot-1.0.45.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
