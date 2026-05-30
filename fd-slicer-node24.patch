@@ -1,0 +1,170 @@
+Fix fd-slicer stream API compatibility with Node.js v18+
+
+fd-slicer's ReadStream and WriteStream used a manual 'destroyed' flag and
+custom destroy() methods that conflict with the destroyed getter/setter
+Node.js added to stream.Readable/Writable in v18. In Node.js v24 this causes
+push(null) to be silently ignored, deadlocking inflate pipelines during electron
+binary extraction. This applies the fix from:
+https://github.com/andrewrk/node-fd-slicer/pull/5
+
+--- a/index.js	2026-05-30 14:29:52.417628899 +0200
++++ b/index.js	2026-05-30 14:31:39.836095581 +0200
+@@ -79,7 +79,7 @@
+ util.inherits(ReadStream, Readable);
+ function ReadStream(context, options) {
+   options = options || {};
+-  Readable.call(this, options);
++  Readable.call(this, { ...options, autoDestroy: true });
+ 
+   this.context = context;
+   this.context.ref();
+@@ -87,33 +87,28 @@
+   this.start = options.start || 0;
+   this.endOffset = options.end;
+   this.pos = this.start;
+-  this.destroyed = false;
+ }
+ 
+ ReadStream.prototype._read = function(n) {
+   var self = this;
+   if (self.destroyed) return;
+ 
+-  var toRead = Math.min(self._readableState.highWaterMark, n);
++  var toRead = n;
+   if (self.endOffset != null) {
+     toRead = Math.min(toRead, self.endOffset - self.pos);
+   }
+   if (toRead <= 0) {
+-    self.destroyed = true;
+     self.push(null);
+-    self.context.unref();
+     return;
+   }
+   self.context.pend.go(function(cb) {
+     if (self.destroyed) return cb();
+-    var buffer = new Buffer(toRead);
++    var buffer = Buffer.alloc(toRead);
+     fs.read(self.context.fd, buffer, 0, toRead, self.pos, function(err, bytesRead) {
+       if (err) {
+         self.destroy(err);
+       } else if (bytesRead === 0) {
+-        self.destroyed = true;
+         self.push(null);
+-        self.context.unref();
+       } else {
+         self.pos += bytesRead;
+         self.push(buffer.slice(0, bytesRead));
+@@ -123,18 +118,15 @@
+   });
+ };
+ 
+-ReadStream.prototype.destroy = function(err) {
+-  if (this.destroyed) return;
+-  err = err || new Error("stream destroyed");
+-  this.destroyed = true;
+-  this.emit('error', err);
++ReadStream.prototype._destroy = function(err, cb) {
+   this.context.unref();
++  cb(err);
+ };
+ 
+ util.inherits(WriteStream, Writable);
+ function WriteStream(context, options) {
+   options = options || {};
+-  Writable.call(this, options);
++  Writable.call(this, { ...options, autoDestroy: true });
+ 
+   this.context = context;
+   this.context.ref();
+@@ -143,19 +135,14 @@
+   this.endOffset = (options.end == null) ? Infinity : +options.end;
+   this.bytesWritten = 0;
+   this.pos = this.start;
+-  this.destroyed = false;
+-
+-  this.on('finish', this.destroy.bind(this));
+ }
+ 
+ WriteStream.prototype._write = function(buffer, encoding, callback) {
+   var self = this;
+-  if (self.destroyed) return;
+ 
+   if (self.pos + buffer.length > self.endOffset) {
+     var err = new Error("maximum file length exceeded");
+     err.code = 'ETOOBIG';
+-    self.destroy();
+     callback(err);
+     return;
+   }
+@@ -163,7 +150,6 @@
+     if (self.destroyed) return cb();
+     fs.write(self.context.fd, buffer, 0, buffer.length, self.pos, function(err, bytes) {
+       if (err) {
+-        self.destroy();
+         cb();
+         callback(err);
+       } else {
+@@ -177,10 +163,9 @@
+   });
+ };
+ 
+-WriteStream.prototype.destroy = function() {
+-  if (this.destroyed) return;
+-  this.destroyed = true;
++WriteStream.prototype._destroy = function(err, cb) {
+   this.context.unref();
++  cb(err);
+ };
+ 
+ util.inherits(BufferSlicer, EventEmitter);
+@@ -212,8 +197,7 @@
+ 
+ BufferSlicer.prototype.createReadStream = function(options) {
+   options = options || {};
+-  var readStream = new PassThrough(options);
+-  readStream.destroyed = false;
++  var readStream = new PassThrough({ ...options, autoDestroy: true });
+   readStream.start = options.start || 0;
+   readStream.endOffset = options.end;
+   // by the time this function returns, we'll be done.
+@@ -236,29 +220,22 @@
+   }
+ 
+   readStream.end();
+-  readStream.destroy = function() {
+-    readStream.destroyed = true;
+-  };
+   return readStream;
+ };
+ 
+ BufferSlicer.prototype.createWriteStream = function(options) {
+   var bufferSlicer = this;
+   options = options || {};
+-  var writeStream = new Writable(options);
++  var writeStream = new Writable({ ...options, autoDestroy: true });
+   writeStream.start = options.start || 0;
+   writeStream.endOffset = (options.end == null) ? this.buffer.length : +options.end;
+   writeStream.bytesWritten = 0;
+   writeStream.pos = writeStream.start;
+-  writeStream.destroyed = false;
+   writeStream._write = function(buffer, encoding, callback) {
+-    if (writeStream.destroyed) return;
+-
+     var end = writeStream.pos + buffer.length;
+     if (end > writeStream.endOffset) {
+       var err = new Error("maximum file length exceeded");
+       err.code = 'ETOOBIG';
+-      writeStream.destroyed = true;
+       callback(err);
+       return;
+     }
+@@ -269,9 +246,6 @@
+     writeStream.emit('progress');
+     callback();
+   };
+-  writeStream.destroy = function() {
+-    writeStream.destroyed = true;
+-  };
+   return writeStream;
+ };
+ 
