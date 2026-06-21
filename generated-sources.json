@@ -1215,9 +1215,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@primer/octicons/-/octicons-19.8.0.tgz#67cad2f55cd1c6e5ccae2670b9c1f595321995d1",
-        "sha512": "226cdefdfc96e35228e5f37edbb4f910079726b8018cc6f3ea7cd4fb061b472957bc80232cf52f6893d5a12b6216581253e4e34d426a83903dae0303cd3c8c0a",
-        "dest-filename": "@primer-octicons-19.8.0.tgz",
+        "url": "https://registry.yarnpkg.com/@primer/octicons/-/octicons-19.28.1.tgz#dcd47eef3ba34b7b642205df8232626229750701",
+        "sha512": "a704a29579a036b6d51766c2864878cd9b54c9be15af89e262103d3e151db63573f3a0368b003f6238e8a474b4b2e4fe23b9e25192447a91299920bb90044a35",
+        "dest-filename": "@primer-octicons-19.28.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -4813,9 +4813,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/form-data/-/form-data-4.0.4.tgz#784cdcce0669a9d68e94d11ac4eea98088edd2c4",
-        "sha512": "2ab1a12fd438ce38f492252de4e3b832bfc0fe3948da30d8b397870696073dc0445528a2a40be7d8aa361e73dedb4ae672ebaf30735d645a7ee089464cc1743b",
-        "dest-filename": "form-data-4.0.4.tgz",
+        "url": "https://registry.yarnpkg.com/form-data/-/form-data-4.0.6.tgz#28e864e1b786dbebb68db1f452f9635278665827",
+        "sha512": "bca6ad021e129557e06eff98b66862463844309b18a6c1b5636acc42d47e49549bcadb120f5606cc321cac026674579cf3cbbff95a069b19e5fbcd202f5b5109",
+        "dest-filename": "form-data-4.0.6.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -5446,6 +5446,13 @@
         "url": "https://registry.yarnpkg.com/hasown/-/hasown-2.0.2.tgz#003eaf91be7adc372e84ec59dc37252cedb80003",
         "sha512": "d21254f5208fbe633320175916a34f5d66ba76a87b59d1f470823dcbe0b24bcac6de72f8f01725adaf4798a8555541f23d6347e58ef10f0001edb7e04a391431",
         "dest-filename": "hasown-2.0.2.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
+        "url": "https://registry.yarnpkg.com/hasown/-/hasown-2.0.4.tgz#8c62d8cb90beb2aad5d0a5b67581ad9854c3f003",
+        "sha512": "4f651b7db044177db089ea5722c3254d6f7e743602eb0321fedfef600e2db8e30aa96cff9f7bebd4d152c508b23fece4da65eca0c03f8bfeea57a2cabadd6dd4",
+        "dest-filename": "hasown-2.0.4.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
