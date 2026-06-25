@@ -3,7 +3,7 @@
 # If any command fails, exit immediately
 set -e
 
-REPO_NAME="pol-rivero/github-desktop-plus"
+REPO_NAME="DesktopPlus/desktop-plus"
 FLATPAK_NAME="io.github.pol_rivero.github-desktop-plus"
 
 REPO_URL="https://github.com/$REPO_NAME.git"
