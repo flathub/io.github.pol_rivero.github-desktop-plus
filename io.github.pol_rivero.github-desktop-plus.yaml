@@ -56,7 +56,7 @@ modules:
         # Use predownloaded dugite-native
         TMPDIR: /run/build/github-desktop-plus/flatpak-node/tmp
         XDG_CACHE_HOME: /run/build/github-desktop-plus/flatpak-node/cache
-        APP_VERSION: 3.5.13.3
+        APP_VERSION: 3.6.1.0
     build-commands:
       # Symlink libcurl-gnutls
       - mkdir -p /app/lib
