@@ -36,9 +36,9 @@ echo "Versions differ. Updating to $TAG_NAME"
 cd "$REPO_ROOT"
 
 # 1. Get the hash of the specified tag
-rm -rf github-desktop-plus
-git clone --depth 1 --branch "$TAG_NAME" $REPO_URL github-desktop-plus
-COMMIT_HASH=$(git -C github-desktop-plus rev-parse HEAD)
+rm -rf desktop-plus
+git clone --depth 1 --branch "$TAG_NAME" $REPO_URL desktop-plus
+COMMIT_HASH=$(git -C desktop-plus rev-parse HEAD)
 
 # 2. Generate 'generated-sources.json'
 python3 -m venv .venv
@@ -61,7 +61,7 @@ sed -E -i.bak "s|$pattern|$replacement|" $YAML_FILE
 
 # Cleanup
 rm $YAML_FILE.bak
-rm -rf github-desktop-plus
+rm -rf desktop-plus
 rm -rf .venv
 
 # The only files that should be committed are $YAML_FILE and generated-sources.json
