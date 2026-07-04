@@ -56,7 +56,7 @@ modules:
         # Use predownloaded dugite-native
         TMPDIR: /run/build/desktop-plus/flatpak-node/tmp
         XDG_CACHE_HOME: /run/build/desktop-plus/flatpak-node/cache
-        APP_VERSION: 3.6.2.0
+        APP_VERSION: 3.6.2.1
     build-commands:
       # Symlink libcurl-gnutls
       - mkdir -p /app/lib
