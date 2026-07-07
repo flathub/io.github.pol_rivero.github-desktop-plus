@@ -1,7 +1,7 @@
 Flatpak manifest for Desktop Plus app
 =======================================
 
-This repository contains the files to create a Flatpak version of [Desktop Plus](https://github.com/DesktopPlus/desktop-plus), a GitHub Desktop fork with advanced functionality and Bitbucket integration.
+This repository contains the files to create a Flatpak version of [Desktop Plus](https://github.com/desktop-plus/desktop-plus), a GitHub Desktop fork with advanced functionality and Bitbucket integration.
 
 Keep in mind that this NOT the official GitHub Desktop app and I am not affiliated with GitHub in any way.
 
@@ -41,10 +41,10 @@ Flatpak builder doesn't allow the build scripts to access the internet, so you h
 
 To update `desktop-plus` repo to its latest commit and update the dependencies, you have to:
 
-1. (If needed) Clone [https://github.com/DesktopPlus/desktop-plus](https://github.com/DesktopPlus/desktop-plus) inside this repo.
+1. (If needed) Clone [https://github.com/desktop-plus/desktop-plus](https://github.com/desktop-plus/desktop-plus) inside this repo.
 
     ```sh
-    git clone https://github.com/DesktopPlus/desktop-plus.git
+    git clone https://github.com/desktop-plus/desktop-plus.git
     ```
 
 1. Checkout the correct commit:
@@ -59,7 +59,7 @@ To update `desktop-plus` repo to its latest commit and update the dependencies, 
     ```yaml
     ...
           - type: git
-            url: https://github.com/DesktopPlus/desktop-plus.git
+            url: https://github.com/desktop-plus/desktop-plus.git
             tag: <tag name>
             commit: <commit hash>
     ...
