@@ -91,7 +91,7 @@ modules:
       - install -Dm644 publish/flatpak/logos/512x512.png  /app/share/icons/hicolor/512x512/apps/$FLATPAK_ID.png
     sources:
       - type: git
-        url: https://github.com/DesktopPlus/desktop-plus.git
+        url: https://github.com/desktop-plus/desktop-plus.git
         tag: v3.6.2.0
         commit: 0e5900e7789ac7c3189696711d25dfb425541a63
       - type: patch
